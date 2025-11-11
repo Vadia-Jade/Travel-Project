@@ -1,16 +1,71 @@
+body{
+  font-family: "Poppins", sans-serif;
+  background: rgb(21, 6, 36);
+}
+header {
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../images/island\ view.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: beige;
+    text-align: center;
+    padding: 200px 0;
+}
+header h1 {
+   font-size: 96px;
+   line-height: 1.5;
+   letter-spacing: 3px;
+   margin: 0;
+}
+header h2 {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    margin: 0;
+}
+header h3 {
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 1.5;
+    letter-spacing: 4px;
+    margin: 0;
+}
+header a {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+    color: blueviolet;
+    padding: 16px 32px;
+    margin-top: 30px;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: white;
+    letter-spacing: 1px;
+}
 .fleur-de-leah-regular {
   font-family: "Fleur De Leah", cursive;
   font-weight: 400;
   font-style: normal;
 }
-.playwrite-nz-h2 {
-  font-family: "Playwrite NZ", cursive;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
 }
-.poppins-medium-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-style: italic;
+@media (max-width: 900px){
+    header {
+        padding: 60px 0;
+    }
+    header h1 {
+        font-size: 48px;
+    }
+    header h2 {
+        font-size: 20px;
+    }
+    header h3 {
+        font-size: 12px;
+    }
 }
+
+

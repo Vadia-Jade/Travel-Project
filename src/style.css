@@ -44,12 +44,40 @@ header a {
     background: white;
     letter-spacing: 1px;
 }
+main {
+    background-color: beige;
+}
+main h2 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    letter-spacing: 3px;
+    color: rgb(28, 4, 49);
+    opacity: 0.3;
+    text-transform: uppercase;
+}
+main h3{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 1.5;
+    color: rgb(28, 4, 49);
+    margin: 0;
+}
+main p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: rgb(28, 4, 49);
+    opacity: 0.7;
+}
 footer{
     background-image: linear-gradient(rgba(14, 3, 24, 0.9), rgba(14,3,24,0.9)), url(../images/flowersforproject.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     color: beige;
-    padding: 100px 0;
+   
 }
 footer h3 {
     font-weight: 700;
@@ -63,7 +91,6 @@ footer p {
      font-weight: 400;
      font-size: 16px;
      opacity: 0.7;
-     margin-right: 20px;
      line-height: 24px;
 }
 footer ul{
@@ -81,6 +108,7 @@ footer a {
 section {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 100px 0;
 }
 .fleur-de-leah-regular {
   font-family: "Fleur De Leah", cursive;
@@ -91,9 +119,18 @@ section {
     max-width: 1400px;
     margin: 0 auto;
 }
-.grid-layout{
+.grid{
     display: grid;
+    grid-gap: 64px;
+}
+.grid-2-columns{
+    grid-template-columns: 1fr 1fr;
+}
+.grid-with-first-narrow{
     grid-template-columns: 1fr 2fr 2fr;
+}
+.img-responsive{
+    max-width: 100%;
 }
 @media (max-width: 900px){
     header {
@@ -107,6 +144,13 @@ section {
     }
     header h3 {
         font-size: 12px;
+    }
+    section {
+        padding: 30px;
+    }
+    .grid {
+        grid-template-columns: 1fr;
+        grid-gap: 32px;
     }
 }
 

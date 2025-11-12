@@ -64,6 +64,19 @@ main h3{
     color: rgb(28, 4, 49);
     margin: 0;
 }
+main h4 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1;
+    color: rgb(28, 4, 49);
+}
+main h5 {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 1;
+    color: rgb(28, 4, 49);
+
+}
 main p {
     font-style: normal;
     font-weight: 400;
@@ -106,9 +119,12 @@ footer a {
     opacity: 0.7;
 }
 section {
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
-    padding: 100px 0;
+    padding: 100px;
+}
+section.secondary {
+    background: #f8f8f8;
 }
 .fleur-de-leah-regular {
   font-family: "Fleur De Leah", cursive;
@@ -118,6 +134,9 @@ section {
 .container {
     max-width: 1400px;
     margin: 0 auto;
+}
+.text-center {
+    text-align: center;
 }
 .grid{
     display: grid;
@@ -129,8 +148,34 @@ section {
 .grid-with-first-narrow{
     grid-template-columns: 1fr 2fr 2fr;
 }
-.img-responsive{
+.grid-3-coloumns {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.card {
+    background: beige;
+    margin: 30px 0;
+}
+.card-body {
+    padding: 30px;
+}
+.card-footer {
+    padding: 0 30px 30px;
+}
+.img-responsive {
     max-width: 100%;
+}
+.btn {
+    display: block;
+    color: beige;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 16px;
+    background-color:rgb(28, 4, 49); 
+    text-decoration: none;
 }
 @media (max-width: 900px){
     header {

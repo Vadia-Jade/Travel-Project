@@ -151,9 +151,16 @@ section.secondary {
 .grid-3-coloumns {
     grid-template-columns: 1fr 1fr 1fr;
 }
+.embed {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+}
 .card {
     background: beige;
     margin: 30px 0;
+}
+.card-header.grid {
+    grid-gap: 0;
 }
 .card-body {
     padding: 30px;
@@ -162,7 +169,8 @@ section.secondary {
     padding: 0 30px 30px;
 }
 .img-responsive {
-    max-width: 100%;
+    width: 100%;
+    display: block;
 }
 .btn {
     display: block;
@@ -196,6 +204,12 @@ section.secondary {
     .grid {
         grid-template-columns: 1fr;
         grid-gap: 32px;
+    }
+    .card-header.grid {
+        display: none;
+    }
+    .embed {
+        aspect-ratio: 16 / 9;
     }
 }
 

@@ -144,12 +144,18 @@ section.secondary {
 }
 .grid-2-columns{
     grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: stretch;
 }
 .grid-with-first-narrow{
     grid-template-columns: 1fr 2fr 2fr;
 }
 .grid-3-coloumns {
     grid-template-columns: 1fr 1fr 1fr;
+}
+.grid-with-3-coloumns {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
 }
 .embed {
     width: 100%;
@@ -171,6 +177,17 @@ section.secondary {
 .img-responsive {
     width: 100%;
     display: block;
+}
+.grid-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.grid-map {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
 }
 .btn {
     display: block;
@@ -205,7 +222,7 @@ section.secondary {
         grid-template-columns: 1fr;
         grid-gap: 32px;
     }
-    .card-header.grid {
+    .grid-image {
         display: none;
     }
     .embed {
